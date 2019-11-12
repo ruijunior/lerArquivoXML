@@ -7,14 +7,18 @@ import br.com.rbsj.service.LeitorXML;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
+import java.io.File;
+import java.io.IOException;
+
 public class LendoArquivoXMLTests {
 
-    private String arquivoXML = "src/main/resources/SLC001.xml";
+
     private Documento documento;
 
     @BeforeEach
-    public void setup(){
-        LeitorXML leitor = new LeitorXML(Documento.class, arquivoXML);
+    public void setup() throws IOException {
+        File file = new File("SLC001.xml");
+        LeitorXML leitor = new LeitorXML(Documento.class, file.getCanonicalPath());
         documento = (Documento) leitor.executa();
     }
 
