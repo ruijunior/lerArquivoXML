@@ -1,4 +1,4 @@
-package br.com.rbsj.msg;
+package br.com.rbsj.service;
 
 
 import javax.xml.bind.JAXBContext;

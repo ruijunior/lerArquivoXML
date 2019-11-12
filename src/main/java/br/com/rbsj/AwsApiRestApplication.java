@@ -1,7 +1,7 @@
 package br.com.rbsj;
 
 import br.com.rbsj.model.Documento;
-import br.com.rbsj.msg.LeitorXML;
+import br.com.rbsj.service.LeitorXML;
 import br.com.rbsj.repository.DocumentoRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.SpringApplication;
